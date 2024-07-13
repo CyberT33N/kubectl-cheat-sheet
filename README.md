@@ -1,4 +1,4 @@
-# kubectl-cheat-sheet
+# kubectl Cheat Sheet
 
 
 
@@ -15,12 +15,37 @@ kubectl version --client
 
 
 
+<br><br>
+<br><br>
+______________________________________
+______________________________________
+
+<br><br>
+<br><br>
+
+# Namespace
+
+<br><br>
+<br><br>
+
+## Create namespace
+```shell
+kubectl create namespace dev
+```
+
 
 
 
 
 <br><br>
 <br><br>
+______________________________________
+______________________________________
+
+<br><br>
+<br><br>
+
+
 
 ## Logs
 
@@ -52,6 +77,17 @@ kubectl top nodes
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 <br><br>
 <br><br>
 ____________________________________________________________
@@ -68,6 +104,10 @@ ____________________________________________________________
 ```shell
 kubectl get events -n test --sort-by='.metadata.creationTimestamp'
 ```
+
+
+
+
 
 
 
