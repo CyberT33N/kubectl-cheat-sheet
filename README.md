@@ -148,6 +148,44 @@ ____________________________________________________________
 <br><br>
 <br><br>
 
+## Service
+
+<br><br>
+
+### Get Service
+```shell
+kubectl get svc --namespace=dev
+
+NAME          TYPE       CLUSTER-IP     EXTERNAL-IP   PORT(S)           AGE
+mongodb-dev   NodePort   10.107.10.66   <none>        27017:30666/TCP   61m
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+<br><br>
+____________________________________________________________
+____________________________________________________________
+<br><br>
+<br><br>
+
 ## Pod
 - https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 
