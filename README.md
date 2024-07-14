@@ -188,6 +188,19 @@ ____________________________________________________________
 
 ## Pod
 - https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+  
+<br><br>
+<br><br>
+
+## Wait until POD is ready
+```shell
+until kubectl get pods --namespace dev | grep gitlab-dev-webservice-default | grep Running | grep 2/2
+do
+    echo "Wait for healthy gitlab-dev-webservice-default Pods..."
+    sleep 10
+done
+```
+
 
 <br><br>
 
