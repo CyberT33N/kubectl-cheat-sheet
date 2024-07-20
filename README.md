@@ -15,6 +15,31 @@ kubectl version --client
 
 
 
+
+
+<br><br>
+<br><br>
+______________________________________
+______________________________________
+
+<br><br>
+<br><br>
+
+
+# Secret
+
+<br><br>
+
+## Create secret
+```
+kubectl create secret -n dev generic gitlab-dev-secret --from-literal='username=root' --from-literal='password=yyyyyyyy'
+```
+
+
+
+
+
+
 <br><br>
 <br><br>
 ______________________________________
