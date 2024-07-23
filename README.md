@@ -160,6 +160,11 @@ ____________________________________________________________
 kubectl get events -n test --sort-by='.metadata.creationTimestamp'
 ```
 
+#### Search specific pod
+```shell
+kubectl get events -n blue | grep your-pod-name
+```
+
 
 
 
