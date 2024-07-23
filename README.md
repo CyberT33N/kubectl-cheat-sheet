@@ -97,13 +97,21 @@ ______________________________________
 
 <br><br>
 
-## Get previous logs of pod
+## Get logs of pod
+- You can use aswell --previous to get past logs
 ```shell
-kubectl logs mongodb-data-0 -n test --previous
+kubectl logs mongodb-data-0 -n test
+# kubectl logs mongodb-data-0 -n test --previous
 ```
 
+<br><br>
 
-
+## Get logs from created container of specific job
+- You can use aswell --previous to get past logs
+```shell
+kubectl logs -n blue --selector=job-name=job-name --all-containers=true
+# kubectl logs -n blue --selector=job-name=job-name --all-containers=true --previous
+```
 
 
 
