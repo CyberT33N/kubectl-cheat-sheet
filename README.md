@@ -40,6 +40,18 @@ kubectl create secret -n dev generic gitlab-dev-secret --from-literal='username=
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 <br><br>
 <br><br>
 ______________________________________
@@ -57,6 +69,15 @@ ______________________________________
 ```shell
 kubectl create namespace dev
 ```
+
+
+
+
+
+
+
+
+
 
 
 
@@ -88,6 +109,7 @@ kubectl logs mongodb-data-0 -n test --previous
 
 
 
+
 <br><br>
 <br><br>
 
@@ -96,6 +118,14 @@ kubectl logs mongodb-data-0 -n test --previous
 ```shell
 kubectl top nodes
 ```
+
+
+
+
+
+
+
+
 
 
 
@@ -142,6 +172,14 @@ kubectl get events -n test --sort-by='.metadata.creationTimestamp'
 
 
 
+
+
+
+
+
+
+
+
 <br><br>
 <br><br>
 ____________________________________________________________
@@ -160,6 +198,26 @@ kubectl port-forward -n "green" service/bitnami-elasticsearch 1335:9200
 ```shell
 sudo kill -9 $(sudo lsof -t -i:9211) & sudo kill -9 $(sudo lsof -t -i:1335)
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -204,6 +262,10 @@ mongodb-dev   NodePort   10.107.10.66   <none>        27017:30666/TCP   61m
 
 
 
+
+
+
+
 <br><br>
 <br><br>
 ____________________________________________________________
@@ -215,7 +277,10 @@ ____________________________________________________________
 - https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 
 
-
+## Get pod which was created from job
+```shell
+kubectl get pods -n blue --selector=job-name=ais-ccm-backend-migrations-job
+```
 
 
 
