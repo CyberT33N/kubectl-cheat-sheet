@@ -25,6 +25,31 @@ ______________________________________
 <br><br>
 <br><br>
 
+# Node
+
+## Get nodes
+```shell
+kubectl get nodes
+```
+
+## Get node description
+```shell
+kubectl describe node <NODE_NAME>
+```
+
+
+
+
+
+
+<br><br>
+<br><br>
+______________________________________
+______________________________________
+
+<br><br>
+<br><br>
+
 
 # Secret
 
