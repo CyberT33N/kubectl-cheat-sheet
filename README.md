@@ -107,6 +107,33 @@ kubectl create namespace dev
 
 
 
+<br><br>
+<br><br>
+______________________________________
+______________________________________
+
+<br><br>
+<br><br>
+
+
+# Copy
+
+<br><br>
+
+## Copy file from host mahine into Container
+
+<br><br>
+
+### Using cat and tee
+```shell
+cat minio.local.com.crt | kubectl -n dev exec -i gitlab-dev-gitlab-runner-74c6497c74-zmpt9 -- /bin/bash -c 'tee ./tmp/minio.local.com.crt'
+```
+
+
+
+
+
+
 
 <br><br>
 <br><br>
