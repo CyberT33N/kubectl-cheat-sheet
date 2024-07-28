@@ -60,6 +60,26 @@ ______________________________________
 kubectl create secret -n dev generic gitlab-dev-secret --from-literal='username=root' --from-literal='password=yyyyyyyy'
 ```
 
+<br><br>
+
+
+## Download cert and create secret
+```shell
+# Create cert
+openssl s_client -showcerts -connect gitlab.local.com:443 -servername gitlab.local.com < /dev/null 2>/dev/null | openssl x509 -outform PEM > ./gitlab/gitlab.local.com.crt
+
+if kubectl get secret -n dev gitlab-cert-self >/dev/null 2>&1; then
+    kubectl delete secret -n dev gitlab-cert-self
+fi
+
+kubectl create secret generic gitlab-cert-self \
+--namespace dev \
+--from-file=./gitlab/gitlab.local.com.crt
+```
+
+
+<br><br>
+
 
 
 
