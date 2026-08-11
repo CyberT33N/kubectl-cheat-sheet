@@ -4,7 +4,28 @@
 
 <br><br>
 
-## Install
+# Install
+
+
+## Windows
+- https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
+
+### choco
+```shell
+choco install kubernetes-cli
+```
+
+
+### Binary
+
+```shell
+curl.exe -LO "https://dl.k8s.io/release/v1.36.0/bin/windows/amd64/kubectl.exe"
+```
+
+
+
+## Ubuntu
+
 - https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
 ```shell
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
