@@ -11,6 +11,7 @@
 - https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
 
 ### choco
+- Run as powershell with admin
 ```shell
 choco install kubernetes-cli
 ```
